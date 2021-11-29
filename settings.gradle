@@ -1,0 +1,9 @@
+rootProject.name = "Mvvm1905"
+include ':app'
+include ':MVVMCore'
+include ':Untils'
+include ':UserCenter'
+include ':Resource'
+include ':Net'
+include ':Net'
+include ':Common'

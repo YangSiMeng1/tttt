@@ -1,0 +1,11 @@
+ext{
+    versions=[
+            compileSdkVersion:30,
+            buildToolsVersion:"30.0.3",
+            minSdkVersion:24,
+            targetSdkVersion:30,
+            rxjava:"2.26",
+            rxandroid:"2.1.0",
+
+    ]
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="user"
+            type="androidx.lifecycle.MutableLiveData&lt;com.bawei.usercenter.entity.UserEntity>" />
+        <variable
+            name="owner"
+            type="com.bawei.usercenter.ui.LoginActivity" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:text="@{user.phoneNumber}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <EditText
+            android:text="@{user.pwd}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+        <Button
+            android:text="登录"
+            android:onClick="@{(view)->owner.onLogin(view)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+</layout>
